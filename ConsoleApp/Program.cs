@@ -1,0 +1,1 @@
+ConsoleApp.EditorConfigExamples.EditorConfigAnalyticsSamples.Run();
