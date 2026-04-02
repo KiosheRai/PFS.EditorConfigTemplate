@@ -1,4 +1,4 @@
-namespace ConsoleApp.EditorConfigExamples;
+﻿namespace ConsoleApp.EditorConfigExamples;
 
 public interface sampleProcessor
 {
