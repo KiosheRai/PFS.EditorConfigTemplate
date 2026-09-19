@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp.EditorConfigExamples;
+using System.Reflection;
+
+namespace ConsoleApp.EditorConfigExamples;
 
 public interface sampleProcessor
 {
@@ -18,7 +20,7 @@ public sealed class EditorConfigAnalyticsSamples : sampleProcessor
         int current = this._mutableButNeverChanged;
         bool positive = number > 0 ? true : false;
 
-
+        Assembly assmebly = Assembly.GetAssembly(typeof(Program));
 
         if (positive == true)
             Console.WriteLine($"Configured: {_configuredValue}, Current: {current}");
@@ -32,6 +34,8 @@ public sealed class EditorConfigAnalyticsSamples : sampleProcessor
 
         string? text = null;
         bool hasText = text != null ? true : false;
+
+        int i = new int();
 
         if (object.ReferenceEquals(text, null))
         {
